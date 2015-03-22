@@ -21,8 +21,8 @@ end
 def tools
   {
     'laptop'   => './tools/laptop.sh',
-    'ohmyzsh'  => 'curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh',
-    'alcatraz' => 'curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh'
+    'ohmyzsh'  => './tools/ohmyzsh.sh',
+    'alcatraz' => './tools/alcatraz.sh'
   }
 end
 

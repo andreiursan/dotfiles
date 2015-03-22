@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+### CONFIG FILES ###
 def config_files
   {
     'config/dot.laptop.local'     => '~/.laptop.local',
@@ -8,17 +9,14 @@ def config_files
   }
 end
 
-config_files.each do |file, link_path|
-  system("ln -sfv #{Dir.pwd}/#{file} #{link_path}")
+def link_config_files
+  config_files.each do |file, link_path|
+    system("ln -sfv #{Dir.pwd}/#{file} #{link_path}")
+  end
 end
 
-#
-# Alcatraz: http://alcatraz.io/
-# Ohmyzsh:  http://ohmyz.sh/
-# Laptop:   https://github.com/thoughtbot/laptop
-#
-
-def tools
+### TOOLS ###
+def system_tools
   {
     'laptop'   => './tools/laptop.sh',
     'ohmyzsh'  => './tools/ohmyzsh.sh',
@@ -26,19 +24,21 @@ def tools
   }
 end
 
-def install(tool)
-  res = system(tools[tool])
-  notification = res ? "#{tool.capitalize} installed!" :
-                       "Something went wrong with the installation of #{tool}!"
-  puts notification
-end
-
-if ARGV.include?("--first-setup")
-  tools.keys.each { |tool| install(tool) }
-end
-
-ARGV.each do |maybe_tool|
-  if tools.keys.include?(maybe_tool)
-    install(maybe_tool)
+def install_tools(tools)
+  tools.each do |tool|
+    ok = system(system_tools[tool])
+    puts "[#{tool}] installation was #{ok ? 'successful' : 'unsuccesful'}!"
   end
 end
+
+### Putting it all together ###
+def execute(options)
+  link_config_files
+  if options.include?("--first-setup")
+    install_tools(system_tools.keys)
+  else
+    install_tools(options.compact)
+  end
+end
+
+execute(ARGV)

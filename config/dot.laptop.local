@@ -1,18 +1,5 @@
 #!/bin/sh
 
-#
-# other installed scripts
-#
-# Alcatraz: curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
-# http://alcatraz.io/
-#
-# Ohmyzsh:  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-# http://ohmyz.sh/
-#
-# Laptop:   curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
-# https://github.com/thoughtbot/laptop
-#
-
 brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
 brew_install_or_upgrade 'leiningen'

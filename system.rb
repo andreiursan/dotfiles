@@ -4,7 +4,7 @@ def config_files
   {
     'config/dot.laptop.local'     => '~/.laptop.local',
     'config/dot.gitignore_global' => '~/.gitignore_global',
-    'config/dot.gitconfig'       => '~/.gitconfig'
+    'config/dot.gitconfig'        => '~/.gitconfig'
   }
 end
 

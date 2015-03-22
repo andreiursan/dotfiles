@@ -26,6 +26,7 @@ brew cask install virtualbox
 brew cask install kitematic
 brew cask install racket
 brew cask install haskell-platform
+brew cask install iterm2
 # brew cask install scala-ide
 # brew cask install xamarin-studio
 

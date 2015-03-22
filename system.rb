@@ -12,7 +12,7 @@ end
 #
 # Alcatraz: http://alcatraz.io/
 # Ohmyzsh:  http://ohmyz.sh/
-# Laptop:    https://github.com/thoughtbot/laptop
+# Laptop:   https://github.com/thoughtbot/laptop
 #
 
 def tools

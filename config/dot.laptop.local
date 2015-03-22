@@ -29,6 +29,7 @@ brew cask install kitematic
 brew cask install racket
 brew cask install haskell-platform
 brew cask install iterm2
+brew cask install atom
 
 # brew cask install flash-player
 # brew cask install scala-ide

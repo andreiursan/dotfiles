@@ -1,11 +1,14 @@
 #!/usr/bin/env ruby
 
-files = {
-  'config/dot.laptop.local' => '~/.laptop.local',
-  'config/dot.gitignore_global' => '~/.gitignore_global'
-}
+def config_files
+  {
+    'config/dot.laptop.local'     => '~/.laptop.local',
+    'config/dot.gitignore_global' => '~/.gitignore_global',
+    'config/dot.gitconfig'       => '~/.gitconfig'
+  }
+end
 
-files.each do |file, link_path|
+config_files.each do |file, link_path|
   system("ln -sfv #{Dir.pwd}/#{file} #{link_path}")
 end
 

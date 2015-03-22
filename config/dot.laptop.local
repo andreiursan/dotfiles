@@ -1,0 +1,40 @@
+#!/bin/sh
+
+#
+# other installed scripts
+# Alcatraz: curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh
+# http://alcatraz.io/
+# Ohmyzsh:  curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+# http://ohmyz.sh/
+
+# brew_install_or_upgrade 'pass'
+# brew_install_or_upgrade 'cassandra'
+# brew_install_or_upgrade 'mongodb'
+brew_install_or_upgrade 'leiningen'
+brew_install_or_upgrade 'v8'
+brew_install_or_upgrade 'phantomjs'
+brew_install_or_upgrade 'emacs --cocoa --srgb'
+
+# brew_install_or_upgrade 'sbt'
+# brew_install_or_upgrade 'mono'
+# brew_install_or_upgrade 'docker'      # probably installed by kitematic
+# brew_install_or_upgrade 'boot2docker' # replaced by kitematic
+
+############## APPS ############
+################################
+brew tap caskroom/cask
+brew_install_or_upgrade brew-cask
+
+### Dev Apps
+brew cask install vagrant
+brew cask install virtualbox
+brew cask install kitematic
+brew cask install racket
+brew cask install haskell-platform
+# brew cask install scala-ide
+# brew cask install xamarin-studio
+
+### Apps ###
+brew cask install 1password
+brew cask install dropbox
+brew cask install spotify

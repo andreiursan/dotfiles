@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
 files = {
-  'config/dot.laptop.local' => '~/.laptop.local'
+  'config/dot.laptop.local' => '~/.laptop.local',
+  'config/dot.gitignore_global' => '~/.gitignore_global'
 }
 
 files.each do |file, link_path|

@@ -4,9 +4,9 @@ brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
 brew_install_or_upgrade 'leiningen'
 brew_install_or_upgrade 'v8'
-brew_install_or_upgrade 'phantomjs'
-brew_install_or_upgrade 'emacs --cocoa --srgb'
 
+# brew_install_or_upgrade 'phantomjs'
+# brew_install_or_upgrade 'emacs' --cocoa --srgb
 # brew_install_or_upgrade 'pass'
 # brew_install_or_upgrade 'cassandra'
 # brew_install_or_upgrade 'mongodb'
@@ -26,11 +26,11 @@ brew cask install java
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install kitematic
-brew cask install racket
-brew cask install haskell-platform
 brew cask install iterm2
 brew cask install atom
 
+# brew cask install racket
+# brew cask install haskell-platform
 # brew cask install flash-player
 # brew cask install scala-ide
 # brew cask install xamarin-studio

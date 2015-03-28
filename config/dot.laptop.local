@@ -42,6 +42,5 @@ brew cask install dropbox
 brew cask install 1password
 brew cask install spotify
 brew cask install steam
-brew cask install telegram
 brew cask install skype
 brew cask install spectacle

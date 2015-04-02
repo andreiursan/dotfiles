@@ -20,7 +20,8 @@ def system_tools
   {
     'laptop'   => './tools/laptop.sh',
     'ohmyzsh'  => './tools/ohmyzsh.sh',
-    'alcatraz' => './tools/alcatraz.sh'
+    'alcatraz' => './tools/alcatraz.sh',
+    'janus' => './tools/janus.sh'
   }
 end
 

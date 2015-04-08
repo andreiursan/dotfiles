@@ -4,6 +4,8 @@ brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
 brew_install_or_upgrade 'leiningen'
 brew_install_or_upgrade 'v8'
+brew_install_or_upgrade 'docker'
+brew_install_or_upgrade 'boot2docker'
 
 # brew_install_or_upgrade 'phantomjs'
 # brew_install_or_upgrade 'emacs' --cocoa --srgb
@@ -12,11 +14,11 @@ brew_install_or_upgrade 'v8'
 # brew_install_or_upgrade 'mongodb'
 # brew_install_or_upgrade 'sbt'
 # brew_install_or_upgrade 'mono'
-# brew_install_or_upgrade 'docker'      # probably installed by kitematic
-# brew_install_or_upgrade 'boot2docker' # replaced by kitematic
+
 
 ############## APPS ############
 ################################
+
 brew_tap 'caskroom/cask'
 brew_install_or_upgrade 'brew-cask'
 
@@ -25,7 +27,6 @@ brew cask install karabiner
 brew cask install java
 brew cask install vagrant
 brew cask install virtualbox
-brew cask install kitematic
 brew cask install iterm2
 brew cask install atom
 

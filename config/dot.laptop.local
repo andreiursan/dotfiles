@@ -8,7 +8,7 @@ brew_install_or_upgrade 'v8'
 brew_install_or_upgrade 'docker'
 brew_install_or_upgrade 'boot2docker'
 # brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
-
+# erlang jq  python rabbitmq runit sqlite unixodbc wget
 
 ############## APPS ############
 ################################

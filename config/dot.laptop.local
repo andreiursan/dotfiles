@@ -5,8 +5,6 @@ brew_install_or_upgrade 'watch'
 brew_install_or_upgrade 'leiningen'
 brew_install_or_upgrade 'sbt'
 brew_install_or_upgrade 'v8'
-brew_install_or_upgrade 'docker'
-brew_install_or_upgrade 'boot2docker'
 # brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-rsvg --with-imagemagick
 # erlang jq  python rabbitmq runit sqlite unixodbc wget
 
@@ -17,10 +15,14 @@ brew_tap 'caskroom/cask'
 brew_install_or_upgrade 'brew-cask'
 
 ### Dev Apps
-brew cask install karabiner
-brew cask install vagrant
-brew cask install virtualbox
 brew cask install atom
+brew cask install karabiner
+
+### VMs & Docker
+brew cask install virtualbox
+brew cask install vagrant
+brew_install_or_upgrade 'docker'
+brew_install_or_upgrade 'boot2docker'
 
 ### Apps ###
 brew cask install spectacle

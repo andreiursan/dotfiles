@@ -11,8 +11,13 @@
 *.o
 *.so
 
-#Leiningen.gitignore#
+# Leiningen.gitignore #
 #####################
+
+# IntelliJ Idea #
+#################
+*.iml
+.Idea
 
 # Packages #
 ############

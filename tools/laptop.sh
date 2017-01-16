@@ -1,4 +1,7 @@
 #!/bin/bash
 
 # Laptop https://github.com/thoughtbot/laptop
-bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
+curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+
+# Modify, Then Execute
+# sh mac 2>&1 | tee ~/laptop.log

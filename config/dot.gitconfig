@@ -1,17 +1,22 @@
 [user]
   name = Andrei Ursan
   email = hello@andreiursan.com
+
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 
 [color]
   ui = true
+
 [color "diff"]
   whitespace = red reverse
+
 [color]
   ui = true
+
 [color "diff"]
   whitespace = red reverse
+
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/andrei/.gitignore_global
@@ -28,26 +33,21 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
-
   # Show files ignored by git:
   ign = ls-files -o -i --exclude-standard
 
-
 [hub]
   protocol = https
+
 [push]
   default = simple
+
 [filter "hawser"]
   clean = git hawser clean %f
   smudge = git hawser smudge %f
   required = true
+
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true

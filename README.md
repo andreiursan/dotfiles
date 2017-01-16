@@ -1,10 +1,7 @@
 ### dot.files
-simple repo to keep track of my files
+Simple repo to keep track of my files.
 
-##### link configuration files
-within the repository directory run the following command
+### Docs
 ```bash
-$ ./system.rb                # just links the config files
-$ ./system.rb --first-setup  # installs all the tools, e.g. laptop
-$ ./system.rb tool-name      # installs only that tool, e.g. ohmyzsh
+$ ./system.sh   # just links the config files
 ```

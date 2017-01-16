@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Laptop https://github.com/thoughtbot/laptop
-curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+curl -o laptop.script https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
 
 # Modify, Then Execute
-# sh mac 2>&1 | tee ~/laptop.log
+# sh laptop.script 2>&1 | tee ~/laptop.log
